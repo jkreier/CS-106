@@ -1,0 +1,22 @@
+
+public class loancalculator {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		/*this program calculates the total amount of money 
+		 * it will cost to repay a loan. You must input the initial 
+		 * value of the loan, the interest rate ,
+		 * and the number of payments to be made on the loan.
+		 */
+		double loan = 40000.0;
+		double intrestrate = 10;
+		double paymentnumber = 12;
+		double interestfraction= intrestrate / double 100
+		double interestamount = loan * interestfraction;
+		System.out.println("your total cost to repay the loan will be:");
+		System.out.print("$");
+		System.out.println((interestamount * paymentnumber)+loan);		
+		
+	}
+
+}
