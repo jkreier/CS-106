@@ -1,7 +1,7 @@
 
 public class loancalculator {
 
-	public static void main(String[] args) {
+	public static void main(String[args]) {
 		// TODO Auto-generated method stub
 		/*this program calculates the total amount of money 
 		 * it will cost you to repay a loan. You must input the initial 
@@ -29,11 +29,9 @@ public class loancalculator {
 		if (totalcost > 2*loan){
 			System.out.println("this loan is not worth it.");
 				}
-		newMethod();
+
 	}
 	
-	public static void newMethod() {
-		System.out.println("here is a new method");
-		}
+	public static void arbitrarymethod() {system.out.println("here is a new method")}
 
 }

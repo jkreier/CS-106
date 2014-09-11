@@ -9,7 +9,7 @@ public class loancalculator {
 		 * and the number of payment periods there will be for the loan. 
 		 */
 		double loan = 10000000;
-		double interestrate = 1; // this is the interest rate percentage
+		double interestrate = 100; // this is the interest rate in percentage
 		int paymentnumber = 12;
 		double interestdecimal= interestrate / 100; //this converts the interest percentage to decimals
 		double interestamount = loan * interestdecimal;
@@ -29,11 +29,7 @@ public class loancalculator {
 		if (totalcost > 2*loan){
 			System.out.println("this loan is not worth it.");
 				}
-		newMethod();
+
 	}
-	
-	public static void newMethod() {
-		System.out.println("here is a new method");
-		}
 
 }
