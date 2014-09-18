@@ -1,0 +1,9 @@
+import java.util.Scanner;
+
+
+public class InputRequest {
+	public static void main(string[] args) {
+		Scanner console = new Scanner(system.in);
+		System.out.print("Loan Amount?");
+		double loan = console.nextDouble();
+}

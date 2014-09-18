@@ -1,0 +1,12 @@
+import java.util.*;
+
+public class inputprompt {
+	public static void main (String[] args){
+		
+		Scanner loanInput = new Scanner(System.in);
+		System.out.print("input loan amount");
+		double loan = loanInput.nextDouble();
+		System.out.println(loan);
+	}
+	
+}

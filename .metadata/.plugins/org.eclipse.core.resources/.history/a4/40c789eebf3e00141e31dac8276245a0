@@ -1,0 +1,21 @@
+import java.util.Scanner;
+
+
+public class calculatorwithinput() {
+	
+
+		public static void main(String[] args) {
+		
+		Scanner loanInput = new Scanner(System.in);
+		System.out.print("input loan amount");
+		double loan = loanInput.nextDouble();
+		System.out.println(loan);
+		return loan;
+		Scanner interesrateInput = new Scanner(System.in);
+		System.out.print("input interest percentage");
+		double interest= interestInput.nextDouble();
+		return interest;
+		Scanner paymentNumber = new Scanner(System.in);
+		System.out.print("input number of payments");
+		double payments=paymentNumber.nextDouble();
+}
