@@ -6,7 +6,7 @@ import java.util.Scanner;
  *
  */
 public class Whatpoliticalphilosopherareyou {
- //the following method asks the user questions and determines their score for the various philosophers.
+ //the following method asks the user questions and determines their score for the various philsoophers.
 	public static void main(String[] args) {
 		int hobbes = 0;
 		int rousseau = 0;
@@ -16,7 +16,7 @@ public class Whatpoliticalphilosopherareyou {
 		Scanner question = new Scanner(System.in);
 		System.out.println("Do you think people are nothing more than intelligent animals? (answer yes or no)");
 		String animal = question.nextLine();
-		if (animal.equals("yes")){			//this part adds points to the different philosophers
+		if (animal.equals("yes")){
 					hobbes +=3;
 					marx +=3;
 					nietzsche +=2;
@@ -31,7 +31,7 @@ public class Whatpoliticalphilosopherareyou {
 					plato +=3; }
 
 
-		System.out.println("Do you think inequality among people is natural? (answer yes or no)");
+		System.out.println("Do you think inequality among people is natural?");
 		String inequality = question.nextLine();
 		if (inequality.equals ("yes")){
 			hobbes +=1;
@@ -49,33 +49,39 @@ public class Whatpoliticalphilosopherareyou {
 		}
 		System.out.println("Do you think (A)the individual is more important than society, or (B)society is more important than the individual?");
 		String individual = question.nextLine();
-		if (individual.equals("A")){
+		if (individual = ("A")){
 			hobbes +=3;
 			marx +=2;
 			nietzsche -=3;
 			}
-		else if(individual.equals("B")){
+		else if(individual = ("B")){
 			hobbes -=3;
 			marx -=2;
 			nietzsche +=3;
 		}
-		System.out.println("Do you think society is capable of improvement? (answer yes or no)");
+		System.out.println("Do you think society is capable of improvement?");
 		String progress = question.nextLine();
-		if (progress.equals("yes")){
+		if (progress = ("yes")){
 			marx +=3;
 			nietzsche -=2;
 			rousseau +=2;
 			plato -=3;
 			}
-		else if (individual.equals("no")){
+		else if (individual = ("no")){
 			marx -=3;
 			nietzsche +=2;
 			rousseau -=2;
 			plato -=3;
 		}
-		philosopherDeterminer(hobbes, marx, nietzsche, rousseau, plato);//calls next method and sends information to it
+		philosopherDeterminer(hobbes, marx, nietzsche, rousseau, plato);
 	}
 		
+		
+		
+		
+		// hobbes marx nietzsche rousseau plato
+	
+
 	
 	/*this method will determine which philosopher has gotten the greatest score and print out which philosopher the person is 
 	 * most like depending on which philosopher got the highest score.
