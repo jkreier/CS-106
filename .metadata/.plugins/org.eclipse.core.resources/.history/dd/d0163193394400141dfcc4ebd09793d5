@@ -1,0 +1,16 @@
+import java.util.Scanner;
+
+public class Whatpoliticalphilosopherareyou {
+
+	public static void main(String[] args) {
+		//TODO Ask question: "Do you believe people are nothing more than highly intelligent animals?" Yes gives 3 points to Hobbes, no gives 2 points to plato and 1 to rousseau and nietszche
+		Scanner peopleAnimals
+		System.out.println("Do you believe people are nothing more than highly intelligent animals? (answer yes or no)")
+		
+		
+	
+        //TODO define political philosophers according to following scores: Hobbes, Nietszche, Marx, Plato, Rousseau 
+		//TODO create method that puts persons's score in order and determines which philsoopher they got the most points for
+	}
+
+}
