@@ -1,0 +1,12 @@
+import java.io.*;
+import java.util.*;
+
+public class FileInput {
+	public static void main(String[] args) throws FileNotFoundException {
+		// TODO Auto-generated method stub
+
+		Scanner filereader = new Scanner(new File("src/input.txt")); 
+		System.out.println(filereader.next());
+	}
+
+}

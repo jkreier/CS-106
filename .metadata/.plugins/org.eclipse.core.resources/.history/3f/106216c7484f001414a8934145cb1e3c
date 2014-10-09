@@ -1,0 +1,28 @@
+import java.io.*;
+import java.util.*;
+
+public class FileInput {
+	public static void main(String[] args) throws FileNotFoundException {
+		// TODO Auto-generated method stub
+
+		Scanner fileReader = new Scanner(new File("src/input.txt")); 
+		/*define variables we are summing up*/
+		double checking = 0;
+		double savings = 0;
+		double creditCard = 0;
+
+		do{	
+		if (fileReader.hasNext("Checking") && ((fileReader.hasNext("Opening Balance") || fileReader.hasNext("Deposit"))));
+				checking += fileReader.nextDouble; 
+		else if (fileReader.hasnext("Savings") && ((fileReader.hasnext("Opening Balance") || fileReader.hasNext("Deposit"))));
+				savings += fileReader.nextDouble;
+		}
+				while (fileReader.hasnextLine);		
+		
+
+		
+		
+		/*create line of code to write results to a new file*/
+		fileReader.close();
+	}
+
