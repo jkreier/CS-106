@@ -22,14 +22,14 @@ public class FileInput {
 				while (input.hasNext() && !input.hasNextDouble()){	
 					input.next();
 				}
-				checking += input.nextDouble(); 
+				checking += fileReader.nextDouble(); 
 				}
 		else if (line.contains("Savings") && (line.contains("Opening Balance") || line.contains("Deposit"))){
 
 				while (input.hasNext() && !input.hasNextDouble()){	
 					input.next();
 			}
-				savings += input.nextDouble();
+				savings += fileReader.nextDouble();
 				}
 
 		else if (line.contains ("Credit Card") &&(line.contains("Opening Balance") || line.contains("Deposit"))){
@@ -37,28 +37,28 @@ public class FileInput {
 				while (input.hasNext() && !input.hasNextDouble()){	
 					input.next();
 					}
-				creditCard += input.nextDouble();
+				creditCard += fileReader.nextDouble();
 				}
-		else if (line.contains("Checking") && line.contains("Withdrawal")){
+		else if (line.contains("Checking") && line.contains("Withdrawl")){
 
 				while (input.hasNext() && !input.hasNextDouble()){	
 					input.next();
 					}
-				checking -= input.nextDouble();
+				checking -= fileReader.nextDouble();
 				}
-		else if ((line.contains(("Savings")) && (line.contains("Withdrawal")))){
+		else if ((line.contains(("Savings")) && (line.contains("Withdrawl")))){
 
 				while (input.hasNext() && !input.hasNextDouble()){	
 					input.next();
 					}
-				savings -= input.nextDouble();
+				savings -= fileReader.nextDouble();
 				}
-		else if (line.contains("Credit Card") && line.contains("Withdrawal")){
+		else if (line.contains("Credit Card") && line.contains("Withdrawl")){
 
 				while (input.hasNext() && !input.hasNextDouble()){	
 					input.next();
 					}
-				creditCard -= input.nextDouble();
+				creditCard -= fileReader.nextDouble();
 				}
 		
 		}
