@@ -1,0 +1,22 @@
+import java.io.*;
+import java.util.*;
+
+/** 
+ * a program to calculate the total distance of a flight given an input in the form of a flight 
+ * plan. 
+ * @author jake
+ *
+ */
+
+public class PilotComputer {
+
+	public static void main(String[] args) throws FileNotFoundException {
+		// calls class to calculate number of lines in file
+		LineSum sum = new LineSum();
+		int numLines= sum.numLines("src/flightplan.txt");
+		// create an array of the object Waypoint 
+		Waypoint[] waypoints = new Waypoint[numLines];
+
+	}
+}
+
