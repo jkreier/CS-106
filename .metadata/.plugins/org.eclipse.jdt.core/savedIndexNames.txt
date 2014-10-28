@@ -1,6 +1,5 @@
 INDEX VERSION 1.127+C:\Users\jake\Documents\Skidmore College\Senior\Cs106\CS-106\.metadata\.plugins\org.eclipse.jdt.core
 3521617142.index
-3768207814.index
 384216248.index
 4149142647.index
 2706502329.index
