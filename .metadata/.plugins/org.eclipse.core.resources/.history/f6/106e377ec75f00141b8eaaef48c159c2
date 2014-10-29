@@ -23,7 +23,7 @@ public class ArrayCreator {
 		totalDistance += w.distance; 
 		}
 		// do I need to return totalDistance to the main class or can I print out the totalDistance in ArrayCreator?
-		System.out.println(totalDistance);
+
 		
 		
 	

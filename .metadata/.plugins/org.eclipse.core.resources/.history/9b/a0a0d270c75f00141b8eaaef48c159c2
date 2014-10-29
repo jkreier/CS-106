@@ -19,11 +19,12 @@ public class ArrayCreator {
 			}
 		//TODO take array and add the last double of each iteration to 
 		double totalDistance = 0;
-		for (Waypoint w : waypoints){
-		totalDistance += w.distance; 
+		int n = 0;
+		while (n < numLines){
+		totalDistance += waypoints[n].nextDouble; 
 		}
 		// do I need to return totalDistance to the main class or can I print out the totalDistance in ArrayCreator?
-		System.out.println(totalDistance);
+
 		
 		
 	
