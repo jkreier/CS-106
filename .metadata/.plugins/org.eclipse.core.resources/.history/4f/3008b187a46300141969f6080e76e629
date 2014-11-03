@@ -1,7 +1,5 @@
 /**
- * ArrayCreator makes the array of Waypoint objects,
- * gives them values, then sums the total distance and
- * prints the total distance of the flight plan.
+ * ArrayCreator makes the array of Waypoint objects and gives them values
  * @param filepath 
  */
 
@@ -28,8 +26,8 @@ public class ArrayCreator {
 		System.out.println("total distance for the flight is " + totalDistance + " nautical miles");
 		
 	
-		//below I have commented out a line of code that I wanted to have print "the total distance from (name of first waypoint) to (name of last waypoint) is x miles, but I couldn't get it to work.
-		/* System.out.println("total distance for the flight from " + waypoints[0].waypoint + "to" + waypoints[i].waypoint + "is" + totalDistance + " nautical miles");	*/
+		
+		System.out.println("total distance for the flight from " + waypoints[0].waypoint + "to" + waypoints[i].waypoint + "is" + totalDistance + " nautical miles");	
 	
 	
 		
