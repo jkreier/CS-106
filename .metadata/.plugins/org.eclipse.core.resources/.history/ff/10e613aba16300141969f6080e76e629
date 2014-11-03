@@ -25,9 +25,7 @@ public class ArrayCreator {
 		
 		System.out.println("total distance for the flight is " + totalDistance + " nautical miles");
 		
-	
 		
-		System.out.println("total distance for the flight from " + waypoints[0].waypoint + "to" + waypoints[i].waypoint + "is" + totalDistance + " nautical miles");	
 	
 	
 		

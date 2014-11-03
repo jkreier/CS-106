@@ -10,6 +10,7 @@ import java.util.*;
 
 public class PilotComputer {
 	public static void main(String[] args) throws FileNotFoundException{
+//TODO call the array creator class and give it the file name
 	ArrayCreator FlightPlan = new ArrayCreator();
 	FlightPlan.load("src/flightplan.txt");
 	

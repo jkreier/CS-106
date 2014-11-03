@@ -6,12 +6,11 @@
  * @author jake
  *
  */
-//defines the class and it's variables
 public class Waypoint {
 	public String waypoint;
 	public int heading;
 	public double distance;
-	//constructs the object:
+	//construct the object:
 	public Waypoint(String waypoint, int heading, double distance){
 		this.waypoint = waypoint;
 		this.heading = heading;
