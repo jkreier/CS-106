@@ -1,0 +1,18 @@
+
+public class RecursionTest {
+
+	public static void main(String[] args) {
+		second(10);
+
+	}
+	
+	public static void second (int number){
+		int current = 0;
+		while (current<number){
+			current ++;
+			System.out.println(current);
+			second(number);
+		}
+	}
+
+}

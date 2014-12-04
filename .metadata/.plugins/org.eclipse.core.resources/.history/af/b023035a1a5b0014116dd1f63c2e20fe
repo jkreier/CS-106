@@ -1,7 +1,0 @@
-
-public class Waypoint {
-	private String waypoint;
-	private int heading;
-	private double distance;
-	
-}

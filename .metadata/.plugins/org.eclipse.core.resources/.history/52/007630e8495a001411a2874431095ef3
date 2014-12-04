@@ -1,8 +1,0 @@
-
-public class ArrayCreator {
-																																									
-	String[] waypoints = new String[numLines];
-	int[] headings = new int[numLines];
-	double[] distances = new double[numLines];
-			
-}

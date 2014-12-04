@@ -1,0 +1,6 @@
+/*
+ * MainClass serves as the center of control for the other parts of the program
+ */
+public class MainClass {
+
+}
