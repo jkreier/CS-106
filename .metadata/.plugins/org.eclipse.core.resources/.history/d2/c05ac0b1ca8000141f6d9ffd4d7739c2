@@ -18,20 +18,24 @@ public class Waypoint {
 	public double fuelBurn;
 	
 	//constructs the object:
-	public Waypoint(String waypoint, int trueCourse, double distance){
+	public Waypoint(String waypoint, int trueCourse, double distance, int trueHeading, int magneticHeading, double groundSpeed, double time, double fuelBurn){
 		this.waypoint = waypoint;
 		this.trueCourse = trueCourse;
 		this.distance = distance;
+		this.trueHeading = trueHeading;
+		this.magneticHeading = magneticHeading;
+		this.groundSpeed = groundSpeed;
+		this.time = time;
+		this.fuelBurn = fuelBurn;
 		
 		
 		}
-	/**Calculates true heading**/
-	public void calcTH(String magVar, String MagVarDir){
-		
+	public void calcTH(){
+		//TODO needs: course, wind speed, wind direction
 		//TODO does formula Sin inverse of (wind speed times sin(wind direction - course)) all divided by 98 (true airspeed)
 		//TODO adds value for WCA to value for trueCourse to give new value for trueHeading
 	}
-	//public void 
+	public void 
 	
 		
 	

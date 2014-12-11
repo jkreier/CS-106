@@ -27,11 +27,11 @@ public class Waypoint {
 		}
 	/**Calculates true heading**/
 	public void calcTH(String magVar, String MagVarDir){
-		
+		//TODO needs: course, wind speed, wind direction and east-west 
 		//TODO does formula Sin inverse of (wind speed times sin(wind direction - course)) all divided by 98 (true airspeed)
 		//TODO adds value for WCA to value for trueCourse to give new value for trueHeading
 	}
-	//public void 
+	public void 
 	
 		
 	

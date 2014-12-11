@@ -6,9 +6,6 @@ import java.util.*;
 
 public class Populator {
 	public void load(String filepath) throws FileNotFoundException{
-		
-		
-		
 		Scanner fileReader = new Scanner(new File (filepath));
 		ArrayList <Waypoint> Waypoints = new ArrayList<Waypoint>();
 		while (fileReader.hasNext()) {
@@ -27,13 +24,6 @@ public class Populator {
 		System.out.println("what is the wind speed for the flight?");
 		String windSpeed= input.nextLine();
 		input.close();
-		
-		for (Waypoint w : Waypoints) {
-				w.calcTH(magVar, magVarDir);  
-			}
-		//how to send wind speed and wind direction, then take course from existing object?
-		
-		
 		//TODO pass above info into methods in waypoint that do the math
 
 		/*for (Waypoint w : Waypoints) {
