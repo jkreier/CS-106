@@ -6,19 +6,21 @@
  * @author jake
  *
  */
+import static java.lang.Math.*;
+
 //defines the class and its variables
 public class Waypoint {
 	public String waypoint;
-	public int trueCourse;
+	public double trueCourse;
 	public double distance;
-	public int trueHeading;
-	public int magneticHeading;
+	public double trueHeading;
+	public double magneticHeading;
 	public double groundSpeed;
 	public double time;
 	public double fuelBurn;
 	
 	//constructs the object:
-	public Waypoint(String waypoint, int trueCourse, double distance){
+	public Waypoint(String waypoint, double trueCourse, double distance){
 		this.waypoint = waypoint;
 		this.trueCourse = trueCourse;
 		this.distance = distance;
@@ -26,12 +28,29 @@ public class Waypoint {
 		
 		}
 	/**Calculates true heading**/
-	public void calcTH(String magVar, String MagVarDir){
+	public void calcTH(String windSpeed, String windDirection){
+		//first calculates wind correction angle
+		double WS = Double.parseDouble(windSpeed);
+		System.out.println(WS);
+		double WD = Double.parseDouble(windDirection);
+		double X = WD-trueCourse;
+		double T= Math.toRadians(X);
+		double WCA = Math.asin((WS*sin(T))/(98));
+		Math.toDegrees(WCA);
+		trueHeading = (trueCourse + WCA);
 		
-		//TODO does formula Sin inverse of (wind speed times sin(wind direction - course)) all divided by 98 (true airspeed)
-		//TODO adds value for WCA to value for trueCourse to give new value for trueHeading
+		//TODO get WCA to calculate properly
 	}
-	//public void 
+		
+	/*public void calcMH (String magVar, String magVarDir){
+		double MV= Double.parseDouble(magVar);
+	}*/
+	
+		
+		
+		
+
+
 	
 		
 	

@@ -29,8 +29,16 @@ public class Populator {
 		input.close();
 		
 		for (Waypoint w : Waypoints) {
-				w.calcTH(magVar, magVarDir);  
+				w.calcTH(windSpeed, windDirection);  
 			}
+		/*for (Waypoint w : Waypoints) {
+			w.calcMH(magVar, magVarDir);
+		}*/
+		
+		
+		
+		
+		
 		//how to send wind speed and wind direction, then take course from existing object?
 		
 		
