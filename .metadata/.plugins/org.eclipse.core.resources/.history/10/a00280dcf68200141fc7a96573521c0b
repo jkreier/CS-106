@@ -71,13 +71,10 @@ public class Waypoint {
 		
 	public void calcTime(){
 		time = distance/groundSpeed;
-		
+		System.out.println(time);
 	}
 
-	public void calcfuelBurn(){
-		fuelBurn = time*8.8;
-		System.out.println(fuelBurn);
-	}
+	public void calcfuelBurn()
 	
 		
 	

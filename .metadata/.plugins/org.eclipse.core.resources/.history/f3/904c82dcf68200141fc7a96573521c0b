@@ -44,9 +44,7 @@ public class Populator {
 		for (Waypoint w: Waypoints){
 			w.calcTime();
 		}
-		for (Waypoint w: Waypoints){
-			w.calcfuelBurn();
-		}
+		
 
 	}
 }

@@ -41,12 +41,7 @@ public class Populator {
 			w.calcGS(windSpeed, windDirection);
 		}
 		
-		for (Waypoint w: Waypoints){
-			w.calcTime();
-		}
-		for (Waypoint w: Waypoints){
-			w.calcfuelBurn();
-		}
+		
 
 	}
 }

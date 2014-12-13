@@ -37,16 +37,20 @@ public class Populator {
 			w.calcMH(magVar, magVarDir);
 			}
 		
-		for (Waypoint w : Waypoints){
-			w.calcGS(windSpeed, windDirection);
-		}
 		
-		for (Waypoint w: Waypoints){
-			w.calcTime();
-		}
-		for (Waypoint w: Waypoints){
-			w.calcfuelBurn();
-		}
+		
+		
+		
+		//how to send wind speed and wind direction, then take course from existing object?
+		
+		
+		//TODO pass above info into methods in waypoint that do the math
 
+		/*for (Waypoint w : Waypoints) {
+			System.out.println(w.waypoint);
+		}*/
+		
+		//TODO for each leg calculate trueCourse, trueHeading, magneticHeading, groundSpeed, fuelBurn, time, and put into arraylist
+		//TODO print newly filled out Arraylist to file
 	}
 }

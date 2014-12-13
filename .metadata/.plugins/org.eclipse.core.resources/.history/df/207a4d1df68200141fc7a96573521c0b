@@ -58,31 +58,24 @@ public class Waypoint {
 		if(magneticHeading < 0){
 			magneticHeading = 360 + magneticHeading; //there is no such thing as a negative compass heading, so if it is negative it gets added to 360 to give the heading
 		}
-		
+		System.out.println(magneticHeading);
 	}
 	
 	public void calcGS(String windSpeed, String windDirection){
 		double WS = Double.parseDouble(windSpeed);
 		double WD = Double.parseDouble(windDirection);
 		groundSpeed = Math.sqrt(  pow(98, 2) + pow(WS,2) -2*98*Math.cos(trueCourse - WD + windCorrectionAngle) );
-		
-		
-	}
-		
-	public void calcTime(){
-		time = distance/groundSpeed;
+		System.out.println(groundSpeed);
 		
 	}
+		
 
-	public void calcfuelBurn(){
-		fuelBurn = time*8.8;
-		System.out.println(fuelBurn);
-	}
+
 	
 		
 	
 	
-	
+	//TODO create math methods
 }
 
 	//TODO print to new file
