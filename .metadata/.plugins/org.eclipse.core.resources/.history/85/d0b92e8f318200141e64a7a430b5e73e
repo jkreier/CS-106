@@ -13,7 +13,6 @@ public class Waypoint {
 	public String waypoint;
 	public double trueCourse;
 	public double distance;
-	public double windCorrectionAngle;
 	public double trueHeading;
 	public double magneticHeading;
 	public double groundSpeed;
@@ -37,9 +36,7 @@ public class Waypoint {
 		double T= Math.toRadians(X);
 		double WCA = Math.asin((WS*sin(T))/(98));
 		Math.toDegrees(WCA);
-		windCorrectionAngle = WCA;
 		trueHeading = (trueCourse + WCA);
-		
 		
 		//TODO get WCA to calculate properly, something to do with radians
 	}
@@ -49,24 +46,11 @@ public class Waypoint {
 		if (magVarDir.equals("east")){ //if magnetic variation is east, subtract magnetic variation, if it is west, add it
 			magneticHeading = (trueHeading - MV);
 			System.out.println(magneticHeading);
-						
 		}
-		else{
-			magneticHeading = (trueHeading+MV);
-		}
-		if(magneticHeading < 0){
-			magneticHeading = 360 + magneticHeading; //there is no such thing as a negative compass heading, so if it is negative it gets added to 360 to give the heading
-		}
-		
 	}
 	
-	public void calcGS(String windSpeed, String windDirection){
-		double WS = Double.parseDouble(windSpeed);
-		double WD = Double.parseDouble(windDirection);
-		groundSpeed = Math.sqrt(  pow(98, 2) + pow(WS,2) -2*98*Math.cos(trueCourse - WD + windCorrectionAngle) );
-		System.out.println(groundSpeed);
 		
-	}
+		
 		
 
 
