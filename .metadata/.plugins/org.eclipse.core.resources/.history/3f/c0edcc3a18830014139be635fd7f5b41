@@ -76,7 +76,7 @@ public class Waypoint {
 	/**calculates fuel burn for this waypoint**/
 	public void calcfuelBurn(){
 		fuelBurn = time*8.8;
-
+		System.out.println(fuelBurn);
 	}
 	
 		
@@ -85,4 +85,4 @@ public class Waypoint {
 	
 }
 
-
+	//TODO print to new file

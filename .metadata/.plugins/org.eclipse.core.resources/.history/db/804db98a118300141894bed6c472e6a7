@@ -28,7 +28,7 @@ public class Waypoint {
 		
 		
 		}
-	/**Calculates true heading for this waypoint**/
+	/**Calculates true heading**/
 	public void calcTH(String windSpeed, String windDirection){
 		//first calculates wind correction angle
 		double WS = Double.parseDouble(windSpeed);
@@ -43,7 +43,7 @@ public class Waypoint {
 		
 		//TODO get WCA to calculate properly, something to do with radians
 	}
-		/**calculates magnetic heading for this waypoint**/
+		
 	public void calcMH (String magVar, String magVarDir){
 		double MV= Double.parseDouble(magVar);
 		if (magVarDir.equals("east")){ //if magnetic variation is east, subtract magnetic variation, if it is west, add it
@@ -60,7 +60,7 @@ public class Waypoint {
 		}
 		
 	}
-	/**calculates groundspeed for this waypoint**/
+	
 	public void calcGS(String windSpeed, String windDirection){
 		double WS = Double.parseDouble(windSpeed);
 		double WD = Double.parseDouble(windDirection);
@@ -68,15 +68,15 @@ public class Waypoint {
 		
 		
 	}
-	/**calculates time for this waypoint**/	
+		
 	public void calcTime(){
 		time = distance/groundSpeed;
 		
 	}
-	/**calculates fuel burn for this waypoint**/
+
 	public void calcfuelBurn(){
 		fuelBurn = time*8.8;
-
+		System.out.println(fuelBurn);
 	}
 	
 		
@@ -85,4 +85,4 @@ public class Waypoint {
 	
 }
 
-
+	//TODO print to new file

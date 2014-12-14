@@ -50,14 +50,12 @@ public class Populator {
 		for (Waypoint w : Waypoints){
 			
 		}
-	
-		
-		
-		PrintWriter output = new PrintWriter("src/navlog.txt");
+	PrintStream output = new PrintStream(new File("src/navlog.txt"));
 		for (Waypoint w: Waypoints){
-			output.println(w.waypoint + w.trueCourse + w.distance + w.windCorrectionAngle + w.trueHeading + w.groundSpeed + w.time + w.fuelBurn);
-			}
+			output.println(w);
 			output.close();
+		}
+	
 	
 	
 	

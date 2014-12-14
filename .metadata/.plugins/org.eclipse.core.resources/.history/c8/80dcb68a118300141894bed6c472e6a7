@@ -13,7 +13,9 @@ public class MainClass {
 	Populator FlightPlan = new Populator();
 	FlightPlan.load("src/flightplan.txt");
 	
-	//TODOprint the new flightplan to a new file
+	//TODO create an array of objects to use as the virtual iteration of the flight plan
+	//TODO take information from flight plan and request magnetic variation and winds
+	//TODO calculate fuel burn, flight time, magnetic heading adjusted for wind print the new flightplan to a new file
 	//TODO determine possibility of making flight without stopping
 	//TODO calculate optimal altitude of flight (figure out equation for this?)
 	}
