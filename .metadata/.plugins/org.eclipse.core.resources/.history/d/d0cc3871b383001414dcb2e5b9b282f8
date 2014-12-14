@@ -1,0 +1,29 @@
+import static java.lang.Math.sin;
+
+
+
+public class TestClass {
+
+	public static void main(String[] args) {
+		double trueCourse = 70;
+		String windSpeed = "30";
+		String windDirection ="120";
+		double WS = Double.parseDouble(windSpeed);
+		double WD = Double.parseDouble(windDirection);
+		double X = WD-trueCourse;
+		System.out.println(X);//first println
+		double T= Math.toRadians(X);
+		System.out.println(T);//second println
+		double Z= sin(T);
+		System.out.println(Z);
+		
+		/*double WCA = Math.asin((WS*sin(T))/(98));
+		System.out.println(WCA); //third println
+		Math.toDegrees(WCA);
+		System.out.println(WCA); //fourth println
+
+		
+		System.out.println(Math.asin(0.8));*/
+	}
+
+}

@@ -47,15 +47,13 @@ public class Populator {
 		for (Waypoint w: Waypoints){
 			w.calcfuelBurn();
 		}
-		for (Waypoint w : Waypoints){
-			
-		}
-	
+
 		
 		
 		PrintWriter output = new PrintWriter("src/navlog.txt");
+		output.println("Waypoint"+" True Course" + " Distance"+" True Heading" + " Ground Speed" + " Time of Flight" + " Fuel Burn");
 		for (Waypoint w: Waypoints){
-			output.println(w.waypoint + w.trueCourse + w.distance + w.windCorrectionAngle + w.trueHeading + w.groundSpeed + w.time + w.fuelBurn);
+			output.println(w.waypoint +" " + w.trueCourse +" "+ w.distance +" "+ w.trueHeading +" "+ w.groundSpeed +" "+ w.time +" "+ w.fuelBurn);
 			}
 			output.close();
 	

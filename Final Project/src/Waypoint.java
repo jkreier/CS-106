@@ -33,12 +33,15 @@ public class Waypoint {
 		//first calculates wind correction angle
 		double WS = Double.parseDouble(windSpeed);
 		double WD = Double.parseDouble(windDirection);
-		double X = WD-trueCourse;
-		double T= Math.toRadians(X);
-		double WCA = Math.asin((WS*sin(T))/(98));
-		Math.toDegrees(WCA);
+		double X = Math.toRadians(WD-trueCourse);
+		double Z= (Math.sin(X));
+		double M = WS*Z;
+		double D = M/98;
+		double WCA = Math.asin(D);
+		WCA = Math.toDegrees(WCA);
 		windCorrectionAngle = WCA;
 		trueHeading = (trueCourse + WCA);
+		
 		
 		
 		//TODO get WCA to calculate properly, something to do with radians

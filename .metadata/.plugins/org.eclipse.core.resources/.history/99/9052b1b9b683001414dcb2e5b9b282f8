@@ -1,0 +1,30 @@
+import static java.lang.Math.sin;
+
+
+
+public class TestClass {
+
+	public static void main(String[] args) {
+		double trueCourse = 70;
+		String windSpeed = "30";
+		String windDirection ="120";
+		double WS = Double.parseDouble(windSpeed);
+		double WD = Double.parseDouble(windDirection);
+		double X = WD-trueCourse;
+		double Z= Math.sin(X);
+		Double M = WS*Z;
+		Double D = M/98;
+		System.out.println(D);
+		double WCA = Math.asin(D);
+		Math.toDegrees(WCA);//this function is whats failing
+		System.out.println(WCA);
+		
+		System.out.println(Math.toDegrees(-0.08031883276650881));
+	
+
+
+		
+
+	}
+
+}
