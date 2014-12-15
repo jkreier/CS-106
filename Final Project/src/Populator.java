@@ -49,14 +49,34 @@ public class Populator {
 		}
 
 		
-		
 		PrintWriter output = new PrintWriter("src/navlog.txt");
-		output.println("Waypoint"+" True Course" + " Distance"+" True Heading" + " Ground Speed" + " Time of Flight" + " Fuel Burn");
+		output.println("Waypoint" +" True Course" + "  Distance"+"  True Heading" + "  Ground Speed" + "  Time of Flight" + "   Fuel Burn");
 		for (Waypoint w: Waypoints){
-			output.println(w.waypoint +" " + w.trueCourse +" "+ w.distance +" "+ w.trueHeading +" "+ w.groundSpeed +" "+ w.time +" "+ w.fuelBurn);
+			output.println(w.waypoint +"        "+ w.trueCourse +"        "+ w.distance +"       "+ w.trueHeading +"       "+ w.groundSpeed +"            "+ w.time +"          "+ w.fuelBurn);
 			}
-			output.close();
+		double totalDistance =0;
+		double totalTime=0;
+		double totalFuelBurn=0;
+		double totalSpeed=0;
+		int i=0;
+		for (Waypoint w: Waypoints){
+			totalDistance = totalDistance + w.distance;
+			totalTime = totalTime + w.time;
+			totalFuelBurn = totalFuelBurn + w.fuelBurn;
+			totalSpeed= totalSpeed +w.groundSpeed;
+			i++;
+		}
+		
+		double averageSpeed = totalSpeed/i;
+		totalTime = Math.round (totalTime*100.0)/100.0;
+		totalFuelBurn = Math.round(totalFuelBurn*100.0)/100.0;
+		averageSpeed = Math.round(averageSpeed*100.0)/100.0;
+		output.println("Total distance =" + totalDistance +" NM. Total time=" + totalTime + " hours. Fuel burn = " + totalFuelBurn + " gal. Average ground speed= " + averageSpeed + "kts." );
+		output.close();
+		
+		
 	
+		
 	
 	
 	}
